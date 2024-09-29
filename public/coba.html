@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="dark:bg-slate-700 dark:text-slate-100 relative overflow-x-hidden font-roboto">
+
+  <!-- navbar start-->
+  <header id="head">
+    <nav class="bg-transparent backdrop-blur-lg text-xl font-semibold w-full z-10 fixed  p-6 flex items-center">
+      <div class="flex items-center justify-between w-full">
+        <div class="flex items-center">
+          <ul>
+            <li class="inline-block ml-2">home</li>
+            <li class="inline-block ml-2">about</li>
+            <li class="inline-block ml-2">contact</li>
+          </ul>
+        </div>
+        <div class="flex items-center align-middle">
+          <span><i class="uil uil-sun"></i></span>
+          <input type="checkbox" name="check" hidden id="check">
+          <label for="check" class="cursor-pointer">
+            <div class="bg-slate-200 w-7 h-3 mx-2 rounded-full flex items-center">
+              <div class="bg-slate-700 h-3 w-3 rounded-full dark:translate duration-700 -x-4"></div>
+            </div>
+          </label>
+          <span><i class="uil uil-moon"></i></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- navbar end -->
+
+  <!-- heading -->
+  <h1 class="font-inter font-medium text-5xl text-center py-20">Learning Utilities from tailwindcss</h1>
+
+  <!-- card components start -->
+  <h3 class="text-xl font-inter ml-8">1. card components</h3>
+  <p class="ml-8 mt-4">the card component including utilites like margin padding bg etc and psudo element like hover
+    focus active etc,</p>
+  <div
+    class="card dark:bg-slate-400 dark:text-slate-100 max-w-lg p-5 shadow-xl rounded-md bg-slate-100 relative hover:bg-slate-500 hover:text-white group mx-8 mt-8">
+    <img class="w-full h-[300px] bg-cover bg-no-repeat object-cover rounded-t-md"
+      src="https://tailwindcss.com/_next/static/media/retro-shoe.24e25785.jpg" alt="">
+    <p class="pl-4 mt-5 mb-8">Old Clasic</p>
+    <p class="pl-4 pb-24">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum veritatis rerum accusantium
+      fugit nostrum? Aut explicabo adipisci cum doloremque rerum?</p>
+    <button
+      class="group-hover:text-black absolute bottom-3 right-3 bg-green-400 py-1 px-6 rounded-full hover:bg-green-500 hover:text-white">buy</button>
+  </div>
+  <!-- card component end -->
+
+  <hr class="my-96">
+
+  <!-- article start -->
+  <article
+    class="first-letter:text-5xl first-letter:float-left first-letter:m-2 max-w-lg p-5 dark:text-gray-600 bg-yellow-100 m-16 rounded-lg shadow-lg">
+    <p>Hello world Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, dignissimos!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores rerum repudiandae, quo unde eius dolorem,
+      quaerat magni voluptatem deleniti, fugit totam illum error. Eligendi quaerat impedit libero quod, mollitia quidem.
+    </p>
+  </article>
+  <!-- article end -->
+
+  <hr class="my-96">
+
+  <!-- input card start -->
+  <form action=""
+    class="my-10 p-5 max-w-lg mx-auto bg-slate-100 dark:bg-slate-400 dark:text-slate-50 shadow-lg rounded-lg">
+    <label for="email"> <span class="after:content-['*'] after:text-pink-600 ml-0.5">gmail</span>
+      <input type="email"
+        class="block w-full p-2 rounded-full focus:outline-none  focus:ring-sky-300 focus:border-sky-500 focus:ring-2 invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-600 peer"
+        placeholder="masukan gmail">
+      <p class="ml-1 mt-1 text-pink-600 invisible peer-invalid:visible">please input the valid email</p>
+    </label>
+    <label for="email"> <span class="after:content-['*'] after:text-pink-600 ml-0.5">phonenumber</span>
+      <input type="number" maxlength="12"
+        class="block w-full p-2 rounded-full focus:outline-none  focus:ring-sky-300 focus:border-sky-500 focus:ring-2 invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-600 peer"
+        placeholder="masukan gmail">
+      <p class="ml-1 mt-1 text-pink-600 invisible peer-invalid:visible">please input the valid email</p>
+    </label>
+    <label for="email"> <span class="after:content-['*'] after:text-pink-600 ml-0.5">password</span>
+      <input type="password"
+        class="block w-full p-2 rounded-full focus:outline-none  focus:ring-sky-300 focus:border-sky-500 focus:ring-2 invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-600 peer"
+        placeholder="masukan gmail">
+      <p class="ml-1 mt-1 text-pink-600 invisible peer-invalid:visible">please input the valid email</p>
+    </label>
+  </form>
+  <!-- input card end -->
+
+  <hr class="my-8">
+
+  <!-- the animation start -->
+  <div class="flex justify-center items-center w-64 h-64 mx-auto my-14 hover:rotate-45 duration-700 bg-fuchsia-400">
+    <div class="h-52 w-52 bg-sky-300 rotate-180 duration-700 flex hover:origin-center justify-center items-center">
+      <div
+        class="h-44 w-44 bg-pink-500 rotate-45 flex justify-center items-center  hover:skew-x-12 hover:origin-center">
+        <div class="w-36 h-36 bg-zinc-800 rounded-full flex justify-center items-center">
+          <div class="w-28 h-28 bg-red-500 rounded-full flex justify-center -spin-slow items-center">
+            <div class="flex justify-center animate-ping items-center">
+              <img class="animate-spin"
+                src="https://upload.wikimedia.org/wikipedia/commons/6/61/Cursed_Seal_Sasuke_%26_Anko.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- the transition end -->
+
+  <hr class="my-8">
+
+  <!-- the gallery photos start -->
+  <h1 class="text-center my-8 text-4xl font-semibold">The gallery of Col</h1>
+  <div class="container mx-auto p-4 columns-3 *:mt-4 *:rounded-lg">
+    <img class="hover:scale-150 duration-700 ease-in-out"
+      src="https://i.pinimg.com/564x/58/e2/0c/58e20c989314367930cdf06106dd3293.jpg" alt="">
+    <img class="hover:scale-150 duration-700 ease-in-out"
+      src="https://i.pinimg.com/564x/10/0b/90/100b90f20de9c5f903d10bc8ddbcda79.jpg" alt="">
+    <img class="hover:scale-150 duration-700 ease-in-out"
+      src="https://i.pinimg.com/564x/4b/1f/82/4b1f8236e0ccc3471e7658931babb97e.jpg" alt="">
+    <img class="hover:scale-150 duration-700 ease-in-out"
+      src="https://i.pinimg.com/564x/ad/d6/42/add642597c537178e453eea5bc2e5451.jpg" alt="">
+    <img class="w-[500px] h-[300px] object-cover hover:scale-150 duration-700 ease-in-out"
+      src="https://i.pinimg.com/564x/0a/20/d4/0a20d4c342daf50232dd32d43740974c.jpg" alt="">
+    <img class="w-[500px] h-[300px] object-cover hover:scale-150 duration-700 ease-in-out"
+      src="https://i.pinimg.com/736x/66/15/8e/66158e23cb182defa11174102afb45cb.jpg" alt="">
+    <img class="w-[500px] h-[300px] object-cover hover:scale-150 duration-700 ease-in-out"
+      src="https://i.pinimg.com/736x/aa/cb/c5/aacbc5c2dd85c82e9aa6d6492d7dc4a5.jpg" alt="">
+    <img class="hover:scale-150 duration-700 ease-in-out"
+      src="https://i.pinimg.com/564x/89/1f/3f/891f3f31314fa7ce4c1a23e0b50d7e4b.jpg" alt="">
+    <img class="hover:scale-150 duration-700 ease-in-out"
+      src="https://i.pinimg.com/564x/ba/97/22/ba9722bb83f4ed8dab622abd5a768908.jpg" alt="">
+    <img class="hover:scale-150 duration-700 ease-in-out"
+      src="https://files.oaiusercontent.com/file-6oPHIeUXFjpPyQOjeuhyRrB5?se=2024-09-25T12%3A00%3A25Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Df2d21f55-0df8-416e-ad08-e8d0d864b89b.webp&sig=V5y4EalXy0/%2BMd5qnOwyFsg/O6MVdgMHYCqaAftx2Fc%3D"
+      alt="">
+  </div>
+  <!-- the gallery photos end -->
+  <hr class="my-96">
+
+  <!-- the youtube vidios start -->
+  <div
+    class="container mx-auto bg-yellow-300 p-2 md:bg-pink-400 sm:bg-lime-500 lg:bg-fuchsia-500 xl:bg-red-500 my-10 flex justify-evenly px-6 flex-wrap">
+    <div class="container w-[510px] p-4 bg-orange-50 mx-auto dark:bg-slate-900 rounded-md shadow-xl max-w-md mt-4">
+      <iframe class="mx-auto h-60 w-full rounded-md" src="https://www.youtube.com/embed/t8OZPJfpcTM?si=h9Km_hhpnbgnV8hM"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3 class="mt-2 p-2 text-2xl font-medium">Lofi beats for Programer</h3>
+      <div class="flex items-center relative">
+        <img class="rounded-full h-12"
+          src="https://yt3.googleusercontent.com/ytc/AIdro_n_DvU-b3vlcOJCYtaYTHt1uwuKRsKhJzm8TwnrWRfsAro=s160-c-k-c0x00ffffff-no-rj"
+          alt="">
+        <figcaption class="inline-block -mt-4 ml-4">eko yusron</figcaption>
+        <p class="absolute  top-7 left-16 text-slate-700 dark:text-slate-300">700 subsricber</p>
+        <button
+          class="absolute right-0 bg-red-500 py-2 px-5 focus:ring focus:ring-red-600 text-white hover:bg-pink-600 rounded-full ">subscribe</button>
+      </div>
+    </div>
+    <div class="container w-[510px] p-4 bg-orange-50 mx-auto dark:bg-slate-900 rounded-md shadow-xl max-w-md mt-4">
+      <iframe class="mx-auto h-60 w-full rounded-md" src="https://www.youtube.com/embed/t8OZPJfpcTM?si=h9Km_hhpnbgnV8hM"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3 class="mt-2 p-2 text-2xl font-medium">Lofi beats for Programer</h3>
+      <div class="flex items-center relative">
+        <img class="rounded-full h-12"
+          src="https://yt3.googleusercontent.com/ytc/AIdro_n_DvU-b3vlcOJCYtaYTHt1uwuKRsKhJzm8TwnrWRfsAro=s160-c-k-c0x00ffffff-no-rj"
+          alt="">
+        <figcaption class="inline-block -mt-4 ml-4">eko yusron</figcaption>
+        <p class="absolute  top-7 left-16 text-slate-700 dark:text-slate-300">700 subsricber</p>
+        <button
+          class="absolute right-0 bg-red-500 py-2 px-5 focus:ring focus:ring-red-600 text-white hover:bg-pink-600 rounded-full ">subscribe</button>
+      </div>
+    </div>
+    <div class="container w-[510px] p-4 bg-orange-50 mx-auto dark:bg-slate-900 rounded-md shadow-xl max-w-md mt-4">
+      <iframe class="mx-auto h-60 w-full rounded-md" src="https://www.youtube.com/embed/t8OZPJfpcTM?si=h9Km_hhpnbgnV8hM"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3 class="mt-2 p-2 text-2xl font-medium">Lofi beats for Programer</h3>
+      <div class="flex items-center relative">
+        <img class="rounded-full h-12"
+          src="https://yt3.googleusercontent.com/ytc/AIdro_n_DvU-b3vlcOJCYtaYTHt1uwuKRsKhJzm8TwnrWRfsAro=s160-c-k-c0x00ffffff-no-rj"
+          alt="">
+        <figcaption class="inline-block -mt-4 ml-4">eko yusron</figcaption>
+        <p class="absolute  top-7 left-16 text-slate-700 dark:text-slate-300">700 subsricber</p>
+        <button
+          class="absolute right-0 bg-red-500 py-2 px-5 focus:ring focus:ring-red-600 text-white hover:bg-pink-600 rounded-full ">subscribe</button>
+      </div>
+    </div>
+    <div class="container w-[510px] p-4 bg-orange-50 mx-auto dark:bg-slate-900 rounded-md shadow-xl max-w-md mt-4">
+      <iframe class="mx-auto h-60 w-full rounded-md" src="https://www.youtube.com/embed/t8OZPJfpcTM?si=h9Km_hhpnbgnV8hM"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3 class="mt-2 p-2 text-2xl font-medium">Lofi beats for Programer</h3>
+      <div class="flex items-center relative">
+        <img class="rounded-full h-12"
+          src="https://yt3.googleusercontent.com/ytc/AIdro_n_DvU-b3vlcOJCYtaYTHt1uwuKRsKhJzm8TwnrWRfsAro=s160-c-k-c0x00ffffff-no-rj"
+          alt="">
+        <figcaption class="inline-block -mt-4 ml-4">eko yusron</figcaption>
+        <p class="absolute  top-7 left-16 text-slate-700 dark:text-slate-300">700 subsricber</p>
+        <button
+          class="absolute right-0 bg-red-500 py-2 px-5 focus:ring focus:ring-red-600 text-white hover:bg-pink-600 rounded-full ">subscribe</button>
+      </div>
+    </div>
+    <div class="container w-[510px] p-4 bg-orange-50 mx-auto dark:bg-slate-900 rounded-md shadow-xl max-w-md mt-4">
+      <iframe class="mx-auto h-60 w-full rounded-md" src="https://www.youtube.com/embed/t8OZPJfpcTM?si=h9Km_hhpnbgnV8hM"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3 class="mt-2 p-2 text-2xl font-medium">Lofi beats for Programer</h3>
+      <div class="flex items-center relative">
+        <img class="rounded-full h-12"
+          src="https://yt3.googleusercontent.com/ytc/AIdro_n_DvU-b3vlcOJCYtaYTHt1uwuKRsKhJzm8TwnrWRfsAro=s160-c-k-c0x00ffffff-no-rj"
+          alt="">
+        <figcaption class="inline-block -mt-4 ml-4">eko yusron</figcaption>
+        <p class="absolute  top-7 left-16 text-slate-700 dark:text-slate-300">700 subsricber</p>
+        <button
+          class="absolute right-0 bg-red-500 py-2 px-5 focus:ring focus:ring-red-600 text-white hover:bg-pink-600 rounded-full ">subscribe</button>
+      </div>
+    </div>
+    <div class="container w-[510px] p-4 bg-orange-50 mx-auto dark:bg-slate-900 rounded-md shadow-xl max-w-md mt-4">
+      <iframe class="mx-auto h-60 w-full rounded-md" src="https://www.youtube.com/embed/t8OZPJfpcTM?si=h9Km_hhpnbgnV8hM"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3 class="mt-2 p-2 text-2xl font-medium">Lofi beats for Programer</h3>
+      <div class="flex items-center relative">
+        <img class="rounded-full h-12"
+          src="https://yt3.googleusercontent.com/ytc/AIdro_n_DvU-b3vlcOJCYtaYTHt1uwuKRsKhJzm8TwnrWRfsAro=s160-c-k-c0x00ffffff-no-rj"
+          alt="">
+        <figcaption class="inline-block -mt-4 ml-4">eko yusron</figcaption>
+        <p class="absolute  top-7 left-16 text-slate-700 dark:text-slate-300">700 subsricber</p>
+        <button
+          class="absolute right-0 bg-red-500 py-2 px-5 focus:ring focus:ring-red-600 text-white hover:bg-pink-600 rounded-full ">subscribe</button>
+      </div>
+    </div>
+  </div>
+  <!-- the youtube vidios end -->
+
+  <hr class="my-96">
+
+  <!-- film card start -->
+  <div
+    class="container rounded-xl lg:max-w-5xl lg:p-5 max-w-md dark:bg-slate-900 mx-auto p-3 relative sm:bg-red-100 md:bg-sky-100 lg:bg-lime-100 sm:max-w-xl md:max-w-3xl lg:flex lg:items-center">
+    <div>
+      <h1 class="text-3xl md:text-4xl md:my-8 my-4 font-medium ">Fast And Furious</h1>
+      <img class="rounded-md md:w-full lg:hidden"
+        src="https://i.pinimg.com/564x/10/0b/90/100b90f20de9c5f903d10bc8ddbcda79.jpg" alt="">
+      <p class="mt-6 md:text-2xl mb-4 text-lg">ride or die</p>
+      <p class="md:text-lg lg:mr-4">sinopsis the fast and furious, seorang brandalan dari las vegas dan dia juga seorang
+        polisi, balapan setiap malam adalah hobby yang menghasilkan puluhan dolar dijalan kota, suatu malam brian race
+        dengan mobile legendnya,dan tanpa disadari malam itu merupakan malam yg sial baginnya, dia terjebak dengan
+        masalah besar dengan kawannya dan polisi yang mengejarnya,ingin tau lebih lanjut mengenai perjalanan brian dalam
+        mengahadapi masalah? watch now on nexfly</p>
+      <button
+        class="bg-red-500 py-2 px-4 rounded-lg mt-5 ml-[80%] text-white md:ml-[90%] sm:ml-[85%] hover:bg-red-700 lg:ml-0">watch</button>
+    </div>
+    <div class="hidden lg:block">
+      <img class="lg:w-screen" src="https://i.pinimg.com/564x/23/f4/65/23f465e84ec11b99b44b8ac6e1e15672.jpg" alt="">
+    </div>
+  </div>
+  <!-- film card end -->
+
+  <hr class="my-96">
+
+  <!-- grid start -->
+  <div class="grid grid-cols-2 gap-2 p-2 md:grid-cols-4 md:gap-4 md:p-4 ">
+    <div class="h-15 rounded-xl font-roboto font-medium dark:text-slate-50 p-2 md:col-start-4 md:row-start-2 relative">
+    <span class="mb-6 inline-block font-normal dark:font-normal"><a href="https://tailwindcss.com/docs/grid-template-columns" target="_blank">grid tailwindcss</a></span>
+    <span>
+      <p> <a href="https://github.com/Ekoysrn" target="_blank">article</a></p>
+      <p> <a href="https://github.com/Ekoysrn" target="_blank">demo</a></p>
+      <p> <a href="https://github.com/Ekoysrn" target="_blank">github</a></p>
+    </span>
+    <span class="hidden md:block absolute bottom-0 font-normal text-slate-500 text-sm dark:text-slate-300"><a href="https://tympanus.net/Development/GridZoom/" target="_blank">inspired by gridzoom</a></span>
+  </div>
+    <div class=" bg-sky-blue h-15 rounded-xl font-roboto font-medium text-slate-700 dark:text-slate-50 p-2 md:col-start-2 md:row-start-2 md:flex"><span class="md:self-end"><a href="https://github.com/Ekoysrn" target="_blank">@ekoyusron_</a></span></div>
+    <div class="h-15 rounded-xl aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] group overflow-hidden hover:scale-95 relative transition-all duration-500">
+      <div class="w-full h-full bg-[url(https://images.unsplash.com/photo-1541077210642-e763a7163ea5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjcwOTV9)] bg-cover bg-center hover:scale-125 group-hover-rotate-12 transition-all duration-700 absolute"></div>
+    </div>
+    <div class=" h-15 rounded-xl aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 group overflow-hidden hover:scale-95 relative transition-all duration-500">
+      <div class="w-full h-full object-cover bg-[url(https://images.unsplash.com/photo-1506901496779-f1d1e93c7825?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjcwOTV9&s=06192d711317413b5551b1d9fa47bbe7)] bg-cover bg-center hover:scale-125 group-hover-rotate-12 transition-all duration-700 absolute"></div>
+    </div>
+    <div class=" h-15 rounded-xl aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] group overflow-hidden hover:scale-95 relative transition-all duration-500">
+      <div class="w-full h-full object-cover bg-[url(https://farm4.staticflickr.com/3944/33909566286_f7c505b656_z.jpg)] bg-cover bg-center hover:scale-125 group-hover-rotate-12 transition-all duration-700 absolute"></div>
+    </div>
+    <div class=" h-15 rounded-xl aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] group overflow-hidden hover:scale-95 relative transition-all duration-500">
+      <div class="w-full h-full object-cover bg-[url(https://images.unsplash.com/photo-1529928750697-1d9646312221?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjcwOTV9&s=fdcdace71520afff00e50764bc3fb519)] bg-cover bg-center hover:scale-125 group-hover-rotate-12 transition-all duration-700 absolute"></div>
+    </div>
+    <div class=" h-15 rounded-xl aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] group overflow-hidden hover:scale-95 relative transition-all duration-500">
+      <div class="w-full h-full object-cover bg-[url(https://images.unsplash.com/photo-1433477221118-6eca20a0d62e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=da0ade88b8207debaf50515aebc4b3f0)] bg-cover bg-center hover:scale-125 group-hover-rotate-12 transition-all duration-700 absolute"></div>
+    </div>
+    <div class=" h-15 rounded-xl aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2 group overflow-hidden hover:scale-95 relative transition-all duration-500">
+      <div class="w-full h-full object-cover bg-[url(https://images.unsplash.com/photo-1468186402854-9a641fd7a7c4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=cc49b0ebd9af04be7b7dcf3986412a6c)] bg-cover bg-center hover:scale-125 group-hover-rotate-12 transition-all duration-700 absolute"></div>
+    </div>
+    <div class=" h-15 rounded-xl aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4 group overflow-hidden hover:scale-95 relative transition-all duration-500">
+      <div class="w-full h-full object-cover bg-[url(https://images.unsplash.com/photo-1498932042873-e35fb6535a02?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjcwOTV9&s=002555b68c8c74cc8ab55d94d9833d06)] bg-cover bg-center hover:scale-125 group-hover-rotate-12 transition-all duration-700 absolute"></div>
+    </div>
+    <div class=" h-15 rounded-xl aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] group overflow-hidden hover:scale-95 relative transition-all duration-500">
+      <div class="w-full h-full object-cover bg-[url(https://images.unsplash.com/photo-1569402928543-87a35efc0606?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjcwOTV9)] bg-cover bg-center hover:scale-125 group-hover-rotate-12 transition-all duration-700 absolute"></div>
+    </div>
+    <div class=" h-15 rounded-xl aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 group overflow-hidden hover:scale-95 relative transition-all duration-500">
+      <div class="w-full h-full object-cover bg-[url(https://farm4.staticflickr.com/3315/3486842841_715f7bedbd_z.jpg)] bg-cover bg-center hover:scale-125 group-hover-rotate-12 transition-all duration-700 absolute"></div>
+    </div>
+    <div class=" h-15 rounded-xl aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 group overflow-hidden hover:scale-95 relative transition-all duration-500">
+      <div class="w-full h-full object-cover bg-[url(https://images.unsplash.com/photo-1502912274126-08f31a73a5f0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjcwOTV9)] bg-cover bg-center hover:scale-125 group-hover-rotate-12 transition-all duration-700 absolute"></div>
+    </div>
+  </div>
+  <!-- grid end -->
+  <!-- the up page button start -->
+  <div
+    class="sticky bottom-0 left-[96%] rounded-full flex justify-center items-center animate-bounce w-10 h-10 bg-lime-200 hover:bg-lime-300">
+    <a class="text-2xl" href="#head">🔝</a>
+  </div>
+  <!-- the up page button end -->
+
+  <script>
+
+    // target the element
+    const checkToggle = document.querySelector("#check");
+    const htmld = document.querySelector("html");
+
+    // toggle dark and light mode
+    checkToggle.addEventListener("click", () => {
+      let isdark = checkToggle.checked ? htmld.classList.add("dark") : htmld.classList.remove("dark");
+      console.log(isdark);
+    })
+  </script>
+</body>
+
+</html>
