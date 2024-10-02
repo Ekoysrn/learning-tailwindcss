@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+  h1{
+    @apply text-2xl;
+  }
+}
+
+@layer components{
+  .btn-blue{
+    @apply bg-sky-300 rounded-xl py-2 px-6 font-semibold
+  }
+
+  .card-grid{
+    @apply rounded-xl aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden hover:scale-95 relative transition-all duration-500
+  }
+
+  .card-grid-img{
+    @apply w-full h-full bg-cover bg-center hover:scale-125 transition-all duration-700 absolute
+  }
+}
+
+
+
